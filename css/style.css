@@ -1,0 +1,300 @@
+
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --accent-color: #2c3e50f4; /* Dark Gray */
+    --light-color: #f1f1f1; /* Light Gray */
+    --hover-color: #5e3c8f; /* Darker Purple */
+    --text-color: #333; /* Dark Text */
+    --background-color: #f8f9fa; /* Light Background */
+    --active-color: #fff; /* White for active link */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+/* Navbar */
+.navbar {
+    position:sticky;
+    top:0;
+    top:0;
+    z-index: 1000;
+    background-color: var(--accent-color);
+    transition: background-color 0.3s ease;
+}
+
+#navbarNav ul li a{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+}
+
+.navbar-brand{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.nav-link {
+    font-family: 'Playfair Display', serif;
+    color: white !important;
+    font-size: 1.2rem;
+}
+
+.navbar-toggler {
+    padding: 0%;
+}
+
+/* Active Link Styling */
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+    text-decoration: underline; /* Ensures the link is underlined */
+    text-decoration-color: rgb(255, 196, 0); /* Sets the color of the underline */
+    text-decoration-thickness: 4px;
+}
+
+/* Hero Section with Parallax Effect */
+.hero {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 150px 0;
+}
+
+
+/* Basic Styling for the Title */
+.hero h1 {
+    font-size: 4.5rem;
+    font-family: "Press Start 2P", system-ui;
+    font-style: normal;
+    color: #594caf;
+    text-align: center;
+    margin:auto;
+    padding-bottom: 2rem;
+    display: inline-block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-out, textGlow 3s infinite alternate;
+}
+
+/* Text Shadow and Color Change Animation */
+@keyframes textGlow {
+    0% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #af4c9b, 0 0 10px #52ff58, 0 0 25px #ffffff;
+    }
+    50% {
+        color: #74da00;
+        text-shadow: 0 0 10px #ff0000, 0 0 15px #2196F3, 0 0 20px #004cff;
+    }
+    100% {
+        color: #ff6a00;
+        text-shadow: 0 0 15px #1aff00, 0 0 20px #00f2ff, 0 0 25px #ffffff;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translatex(1000px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero p{
+    color:#0048ff;
+    font-size: 1rem;
+    text-decoration: underline;
+    font-family: "Press Start 2P", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    z-index: 120;
+}
+
+
+.hero h4 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color:rgb(42, 72, 93);
+}
+
+.heroUs {
+    max-width: 60%;
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    background-color: #ffff64c9;
+    border-radius: 20px;
+    box-shadow:0 0 3px black;
+}
+
+.heroUs div h4{
+    top: -1rem;
+    left: -1rem;
+    position:absolute;
+    font-family:cursive;
+    color:#000000;
+    border-radius: 0.5rem;
+    box-shadow:0 0 3px black;
+    background-color:#ffffff;
+    transform: rotate(-25deg);
+}
+
+.heroUs div span{
+    position: absolute;
+    top: 0.1rem;
+    left: 1.3rem;
+    z-index: 9;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+}
+
+
+.heroUs div span img{
+    z-index: 9;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+    
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    color: var(--light-color);
+    background: linear-gradient(to bottom, #2c3e5095, var(--accent-color));
+}
+
+.about .edgeTech{ 
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    font-style: normal;
+}
+.row .col-12 .box{
+    border-radius: 10px;
+    background-color:rgb(60, 133, 197);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75); /* Equal shadow on all sides */
+}
+.row .col-12 .box img{
+    width: 100%; /* Make image take full width */
+    max-height: 50%; /* Make image take half height */
+    object-fit: cover; /* Crop image to cover the area without stretching */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.techTitle{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color:#ffffff86;
+}
+
+.techDefine span{
+    color: #ffffff8b;
+}
+
+/* Portfolio Section */
+.portfolio {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.portfolio .card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio .card:hover {
+    transform: translateY(-10px);
+}
+
+.portfolio .card img {
+    transition: transform 0.3s ease;
+}
+
+.portfolio .card:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio .card-body {
+    padding: 20px;
+}
+
+.portfolio .card-body h5 {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--primary-color);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .heroUs {
+        max-width: 90%;
+    }
+    .about h2 {
+        font-size: 2.8rem;
+    }
+
+    .row .col-12 .box{
+        margin-bottom: 2rem;
+    }
+
+    .portfolio .card img {
+        height: 200px;
+    }
+
+    .portfolio .card-body h5 {
+        font-size: 1.2rem;
+    }
+}

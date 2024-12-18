@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS for Flexbox/Grid and responsiveness -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Orbitron:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Press+Start+2P&display=swap');
+    </style>
+    <script src="js/clickEvent.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <img src="images/logo.jpg" width="110px" height="60px" alt="Logo" style="border-radius: 6px;">
+            <a class="navbar-brand" href="#">Wubshet Adane</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span>⬇️</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " id="home" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="about" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="portfolio" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " id="contact" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero" style="background-image: url('images/ddd.jpg');">
+        <h1>Welcome to My Portfolio</h1>
+        <div class="heroUs">
+            <div>
+                <h4>i am here..🙌</h4>
+                <span><img src="images/screew.jpg" alt="" ></span>
+            </div>
+            <p>Wubshet Adane – Developer & Software Engineer!</p>
+            <h4>
+                Hello! I’m Wubshet Adane, a dedicated Web Developer and Software Engineer with a passion for crafting exceptional digital experiences.
+                 With extensive expertise in <span style="color:rgb(13, 152, 0);">full-stack</span> technologies, 
+                 I specialize in developing <span style="color:rgb(13, 152, 0);">dynamic, responsive,</span> and <span style="color:rgb(13, 152, 0);">user-friendly</span> websites 
+                 that not only look great but also perform seamlessly <span style="color: rgb(13, 152, 0);">across all devices</span>.
+                My mission is to bring your ideas to life by creating <span style="color: rgb(13, 152, 0);">innovative</span> web solutions tailored to your unique needs.
+                <h4> <a href="about.html">read more</a> </h4>
+            </h4>
+        </div>
+    </header>
+
+    <!-- tech Section -->
+    <section id="about" class="about text-center">
+        <p class="edgeTech">
+            Cutting-edge technologies that relate to my interests, projects, and studies
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="box">
+                        <div>
+                            <img src="images/fullstack.jpg" alt="">
+                        </div>
+                        <p class="techTitle">Web development</p>
+                        <div class="techDefine">
+                            It is a vast field that requires a mix of different technical skills.
+                             Here are the key skills I've developed to become proficient in this area 
+                             👉&quot;<span>Front- End and Full-Stack</span> &quot;development.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="box">
+                        <div>
+                            <img src="images/algos.jpg" alt="">
+                        </div>
+                        <p class="techTitle">Algorithm and Data-structure</p>
+                        <div class="techDefine">
+                            As a software engineer, I have developed strong algorithm skills, which are essential 
+                            for 👉&quot;<span>problem-solving, optimizing code, and building efficient applications</span> &quot;.
+                        </div>  
+                     </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="box">
+                        <div>
+                            <img src="images/algorithm.jpg" alt="">
+                        </div>
+                        <p class="techTitle">Problem-Solving and Debugging</p>
+                        <div class="techDefine">
+                            I have the ability to quickly understand problems rationally and brainstorm innovative ideas and come up with creative solutions whenever new challenges arise.
+                        </div> 
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="box">
+                        <div>
+                            <img src="images/fwork.jpg" alt="">
+                        </div>
+                        <p class="techTitle"> Frameworks and Libraries</p>
+                        <div class="techDefine">
+                            I have gained expertise in some array of frameworks and libraries 
+                            that enable me to build high-performance, scalable, and maintainable application.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="text-center mb-5">My Work</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x200?text=Project+1" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A responsive e-commerce site built with React and Node.js.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x200?text=Project+2" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A portfolio website designed with modern design principles and WordPress.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x200?text=Project+3" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">A mobile application built with Flutter and Firebase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <p>&copy; 2024 Wubshet Adane. All Rights Reserved. | <a href="mailto:0967490154w@gmail.com">Contact</a></p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
