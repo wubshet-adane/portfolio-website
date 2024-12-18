@@ -70,7 +70,7 @@ body {
 
 /* Basic Styling for the Title */
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-family: "Press Start 2P", system-ui;
     font-style: normal;
     color: #594caf;
@@ -87,15 +87,15 @@ body {
 @keyframes textGlow {
     0% {
         color: #ffffff;
-        text-shadow: 0 0 5px #af4c9b, 0 0 10px #52ff58, 0 0 25px #ffffff;
+        text-shadow: 0 0 5px #af4c9b, 0 0 10px #52ff58, 0 0 5px #ffffff;
     }
     50% {
         color: #74da00;
-        text-shadow: 0 0 10px #ff0000, 0 0 15px #2196F3, 0 0 20px #004cff;
+        text-shadow: 0 0 10px #ff0000, 0 0 15px #2196F3, 0 0 6px #004cff;
     }
     100% {
         color: #ff6a00;
-        text-shadow: 0 0 15px #1aff00, 0 0 20px #00f2ff, 0 0 25px #ffffff;
+        text-shadow: 0 0 15px #1aff00, 0 0 20px #00f2ff, 0 0 5px #ffffff;
     }
 }
 
@@ -187,9 +187,13 @@ body {
     font-style: normal;
 }
 .row .col-12 .box{
+    transition: transform 0.3s ease;
     border-radius: 10px;
     background-color:rgb(60, 133, 197);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75); /* Equal shadow on all sides */
+}
+.row .col-12 .box:hover{
+    transform: translateY(-10px);
 }
 .row .col-12 .box img{
     width: 100%; /* Make image take full width */
