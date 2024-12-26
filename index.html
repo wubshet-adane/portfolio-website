@@ -130,42 +130,96 @@
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
-            <h2 class="text-center mb-5">My Work</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200?text=Project+1" class="card-img-top" alt="Project 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">A responsive e-commerce site built with React and Node.js.</p>
-                        </div>
-                    </div>
+          <h2 class="text-center mb-5">My Work</h2>
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Project+1" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Online Food Ordering System</h5>
+                  <p class="card-text">A responsive e-commerce web app and mobile app for ordering food online using Flutter, Firebase, JavaScript, PHP, SQL, and other backend technologies.</p>
+                  <a href="#project1-details" class="btn btn-primary">View More</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200?text=Project+2" class="card-img-top" alt="Project 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">A portfolio website designed with modern design principles and WordPress.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Project+2" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Portfolio Website</h5>
+                  <p class="card-text">A portfolio website designed with modern design principles using WordPress and responsive layouts.</p>
+                  <a href="#project2-details" class="btn btn-primary">View More</a>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://via.placeholder.com/400x200?text=Project+3" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">A mobile application built with Flutter and Firebase.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Project+3" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Mobile Banking App</h5>
+                  <p class="card-text">A secure mobile banking app developed with Flutter and Firebase, enabling online transactions and account management.</p>
+                  <a href="#project3-details" class="btn btn-primary">View More</a>
                 </div>
+              </div>
+              <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Project+4" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                  <h5 class="card-title">E-Learning Platform</h5>
+                  <p class="card-text">An e-learning platform built with Laravel, React, and MySQL to facilitate online courses and student management.</p>
+                  <a href="#project4-details" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://via.placeholder.com/400x200?text=Project+5" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                  <h5 class="card-title">Real Estate Management System</h5>
+                  <p class="card-text">A web-based real estate management system developed using PHP, JavaScript, and SQL to manage properties, clients, and deals.</p>
+                  <a href="#project5-details" class="btn btn-primary">View More</a>
+                </div>
+              </div>
             </div>
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+          </div>
         </div>
-    </section>
+      </section>
+      
+  
+<script>
+const carousel = document.querySelector('.carousel');
+const cards = document.querySelectorAll('.carousel .card');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+let currentIndex = 0;
+const totalCards = cards.length;
+const visibleCards = 3;
+
+function showCards(index) {
+  const offset = -index * (100 / visibleCards);
+  carousel.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % Math.ceil(totalCards / visibleCards);
+  showCards(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex === 0) ? Math.ceil(totalCards / visibleCards) - 1 : currentIndex - 1;
+  showCards(currentIndex);
+}
+
+// Auto-scroll every 3 seconds
+setInterval(nextSlide, 3000);
+
+// Add event listeners for buttons
+prevBtn.addEventListener('click', prevSlide);
+nextBtn.addEventListener('click', nextSlide);
+
+// Initialize the carousel
+showCards(currentIndex);
+
+</script>
+
 
     <!-- Footer -->
     <footer id="contact">
