@@ -31,7 +31,7 @@ body {
   }
 
 .topaboutus a:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     font-size: 20px;
 }
 /* Navbar */
@@ -196,7 +196,7 @@ body {
 .about {
     padding: 80px 0;
     color: #e4e4e4;
-    background: linear-gradient(to bottom, #383333de, #111111);
+    background: linear-gradient(to bottom, #10233b7e, #10233b);
 }
 
 .about .edgeTech{ 
@@ -237,7 +237,7 @@ body {
 .portfolio {
     position: relative;
     width: 100%;
-    background: linear-gradient(to bottom, #10233b7e, #10233b);
+    /*background: linear-gradient(to bottom, #10233b7e, #10233b);*/
     padding: 80px 0;
 }
 
