@@ -17,6 +17,23 @@ body {
     background-color: var(--background-color);
 }
 
+.topaboutus {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Adjust spacing between elements */
+    text-align: center;
+    background: white; /* Optional background for styling */
+    padding: 4px 20px; /* Add padding around the content */
+    border: 1px solid #00ccff; /* Optional border */
+  }
+
+.topaboutus a:hover{
+    transform: scale(1.2);
+    font-size: 20px;
+}
 /* Navbar */
 .navbar {
     position:sticky;
@@ -26,6 +43,7 @@ body {
     background-color: var(--accent-color);
     transition: background-color 0.3s ease;
 }
+
 
 #navbarNav ul li a{
     font-family: "Orbitron", sans-serif;
@@ -178,7 +196,7 @@ body {
 .about {
     padding: 80px 0;
     color: #e4e4e4;
-    background: linear-gradient(to bottom, #000000d0, #111111);
+    background: linear-gradient(to bottom, #383333de, #111111);
 }
 
 .about .edgeTech{ 
@@ -217,37 +235,18 @@ body {
 
 /* Portfolio Section */
 .portfolio {
+    position: relative;
+    width: 100%;
     background: linear-gradient(to bottom, #10233b7e, #10233b);
     padding: 80px 0;
 }
 
-.portfolio .card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.portfolio .card:hover {
-    transform: translateY(-10px);
-}
-
-.portfolio .card img {
-    transition: transform 0.3s ease;
-}
-
-.portfolio .card:hover img {
-    transform: scale(1.1);
-}
-
-.portfolio .card-body {
-    padding: 20px;
-}
-
-.portfolio .card-body h5 {
-    font-size: 1.7rem;
-    font-weight: bold;
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
 
 /* Footer */
@@ -259,58 +258,6 @@ footer {
 }
 
 
-.carousel-container {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  
-  .card {
-    flex: 0 0 33.33%; /* Display 3 cards at a time */
-    box-sizing: border-box;
-    margin: 10px;
-  }
-  
-  button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-  }
-  
-  .prev-btn {
-    left: 10px;
-  }
-  
-  .next-btn {
-    right: 10px;
-  }
-  
-  button:focus {
-    outline: none;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    padding: 20px;
-  }
   
   .card-body {
     display: flex;
@@ -392,24 +339,4 @@ footer {
         margin-bottom: 2rem;
     }
 
-    .portfolio .card img {
-        height: 200px;
-    }
-
-    .portfolio .card-body h5 {
-        font-size: 1.2rem;
-    }
-    .carousel-container {
-        overflow: hidden;
-      }
-    
-      .carousel {
-        display: flex;
-        flex-wrap: nowrap;
-      }
-    
-      .card {
-        flex: 0 0 100%; /* Display only one card at a time */
-        max-width: 100%;
-      }
 }
