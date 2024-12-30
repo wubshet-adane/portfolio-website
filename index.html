@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>wubshet-adane</title>
 
     <!-- Google Fonts for Modern Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
     <!-- Custom Styles -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/carousal.css" rel="stylesheet">
+    <link rel="icon" href="images/log4.jpg" type="image/x-icon">
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap');
@@ -99,8 +100,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <img src="images/logo.jpg" width="110px" height="60px" alt="Logo" style="border-radius: 6px;">
-            <a class="navbar-brand" href="#">Wubshet Adane</a>
+            <img src="images/logo2.jpg" width="200px" height="60px" alt="Logo" style="border-radius: 6px;">
+            <!--<a class="navbar-brand" href="#">Wubshet Adane</a>-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span>⬇️</span>
@@ -108,16 +109,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link " id="home" href="#home">Home</a>
+                        <a class="nav-link " id="" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " id="about" href="#about">About</a>
+                        <a class="nav-link " id="" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " id="portfolio" href="#portfolio">Portfolio</a>
+                        <a class="nav-link " id="" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " id="contact" href="#contact">Contact</a>
+                        <a class="nav-link " id="" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -125,12 +126,13 @@
     </nav>
 
     <!-- Hero Section -->
-    <header id="home" class="hero" style="background-image: url('images/ddd.jpg');">
-        <h1>Welcome to My Portfolio</h1>
-        <div class="heroUs">
+    <header id="home" class="hero" style="background-image: url('images/background3.jpg');">
+        <h1>Welcome to Here!!!</h1>
+        <div class="herousbag" id="herousbag">
+          <div class="heroUs" id="heroUs">
             <div>
-                <h4>i am here..🙌</h4>
-                <span><img src="images/screew.jpg" alt="" ></span>
+                <span class="left"><img src="images/screew.jpg" alt="" ></span>
+                <span class="right"><img src="images/screew.jpg" alt="" ></span>
             </div>
             <p>Wubshet Adane – Developer</p>
             <h4>
@@ -139,8 +141,9 @@
                  I specialize in developing <span style="color:rgb(13, 152, 0);">dynamic, responsive,</span> and <span style="color:rgb(13, 152, 0);">user-friendly</span> websites 
                  that not only look great but also perform seamlessly <span style="color: rgb(13, 152, 0);">across all devices</span>.
                 My mission is to bring your ideas to life by creating <span style="color: rgb(13, 152, 0);">innovative</span> web solutions tailored to your unique needs.
-                <h4> <a href="about.html">read more</a> </h4>
+                <h4> <button onclick="clickEventreadmore()" class="readmore" id="readmore">read more ▼ </button> </h4>
             </h4>
+          </div>
         </div>
     </header>
 
@@ -205,7 +208,7 @@
     </section>
     <section id="portfolio" class="portfolio">
       <div class="wave">
-<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 690" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
+        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 690" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
           .path-0{
             animation:pathAnim-0 4s;
             animation-timing-function: linear;
@@ -293,7 +296,9 @@
             100%{
               d: path("M 0,700 L 0,525 C 84.76410256410256,536.7948717948718 169.52820512820512,548.5897435897435 235,536 C 300.4717948717949,523.4102564102565 346.651282051282,486.43589743589746 438,485 C 529.348717948718,483.56410256410254 665.8666666666667,517.6666666666666 748,537 C 830.1333333333333,556.3333333333334 857.8820512820512,560.8974358974358 918,544 C 978.1179487179488,527.1025641025642 1070.6051282051283,488.7435897435897 1163,482 C 1255.3948717948717,475.2564102564103 1347.6974358974358,500.12820512820514 1440,525 L 1440,700 L 0,700 Z");
             }
-          }</style><defs><linearGradient id="gradient" x1="4%" y1="69%" x2="96%" y2="31%"><stop offset="5%" stop-color="#3745a9"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,700 L 0,525 C 84.76410256410256,536.7948717948718 169.52820512820512,548.5897435897435 235,536 C 300.4717948717949,523.4102564102565 346.651282051282,486.43589743589746 438,485 C 529.348717948718,483.56410256410254 665.8666666666667,517.6666666666666 748,537 C 830.1333333333333,556.3333333333334 857.8820512820512,560.8974358974358 918,544 C 978.1179487179488,527.1025641025642 1070.6051282051283,488.7435897435897 1163,482 C 1255.3948717948717,475.2564102564103 1347.6974358974358,500.12820512820514 1440,525 L 1440,700 L 0,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path></svg>      </div>
+          }</style><defs><linearGradient id="gradient" x1="4%" y1="69%" x2="96%" y2="31%"><stop offset="5%" stop-color="#3745a9"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,700 L 0,525 C 84.76410256410256,536.7948717948718 169.52820512820512,548.5897435897435 235,536 C 300.4717948717949,523.4102564102565 346.651282051282,486.43589743589746 438,485 C 529.348717948718,483.56410256410254 665.8666666666667,517.6666666666666 748,537 C 830.1333333333333,556.3333333333334 857.8820512820512,560.8974358974358 918,544 C 978.1179487179488,527.1025641025642 1070.6051282051283,488.7435897435897 1163,482 C 1255.3948717948717,475.2564102564103 1347.6974358974358,500.12820512820514 1440,525 L 1440,700 L 0,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-3"></path>
+       </svg>
+      </div>
       <div class="container">
         <h2 class="text-center mb-5">My Work</h2>
     

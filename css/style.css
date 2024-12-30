@@ -72,13 +72,13 @@ body {
 /* Active Link Styling */
 .nav-link.active, .nav-link:focus, .nav-link:hover {
     text-decoration: underline; /* Ensures the link is underlined */
-    text-decoration-color: rgb(255, 196, 0); /* Sets the color of the underline */
+    text-decoration-color: rgb(255, 183, 3); /* Sets the color of the underline */
     text-decoration-thickness: 4px;
 }
 
 /* Hero Section with Parallax Effect */
 .hero {
-    background-image: url('images/background.jpg');
+    position: relative;
     background-size: cover;
     background-position: center;
     color: rgb(0, 0, 0);
@@ -151,29 +151,27 @@ body {
     color:rgb(42, 72, 93);
 }
 
+.herousbag{
+    position:absolute;
+    bottom: -5rem;
+    transition: 0.5s;
+}
+
 .heroUs {
+    height: 200px;
+    overflow: hidden;
     max-width: 60%;
     position: relative;
     margin: auto;
     width: fit-content;
-    background-color: #ffff64c9;
+    background-color:white;
     border-radius: 20px;
-    box-shadow:0 0 3px black;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
 }
 
-.heroUs div h4{
-    top: -1rem;
-    left: -1rem;
-    position:absolute;
-    font-family:cursive;
-    color:#000000;
-    border-radius: 0.5rem;
-    box-shadow:0 0 3px black;
-    background-color:#ffffff;
-    transform: rotate(-25deg);
-}
 
-.heroUs div span{
+
+.heroUs div .left{
     position: absolute;
     top: 0.1rem;
     left: 1.3rem;
@@ -184,12 +182,36 @@ body {
 }
 
 
+.heroUs div .right{
+    position: absolute;
+    top: 0.1rem;
+    right: 1.3rem;
+    z-index: 9;
+    border-radius:50%;
+    width: 20px;
+    height: 20px;
+}
+
 .heroUs div span img{
     z-index: 9;
     border-radius:50%;
     width: 20px;
     height: 20px;
     
+}
+
+.readmore{
+    font-family:fantasy;
+    font-size:1rem;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px);
+    background-color: #0c0c0c;
+    box-shadow: 0 0 10px black;
+    border-radius: 20px 20px 0 0;
+    color: #ffffff;
+    border: none;
+    outline: none;
 }
 
 /* About Section */
