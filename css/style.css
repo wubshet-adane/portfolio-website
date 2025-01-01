@@ -217,8 +217,8 @@ body {
 /* About Section */
 .about {
     padding: 80px 0;
-    color: #e4e4e4;
-    background: linear-gradient(to bottom, #10233b7e, #10233b);
+    color: #000000;
+    background: linear-gradient(to bottom, #ffffffcc, #a5a5a5);
 }
 
 .about .edgeTech{ 
@@ -228,31 +228,82 @@ body {
     font-style: normal;
     margin-bottom: 4rem;
 }
-.row .col-12 .box{
-    transition: transform 0.3s ease;
+
+
+
+.containers {
+    height: fit-content;
+    overflow-x: auto;  /* Enable horizontal scrolling for the container */
+    scrollbar-color: rgb(0, 255, 17) rgba(255, 255, 255, 0);
+    scrollbar-arrow-color: #1aff00;
+    scrollbar-base-color: #1aff00;
+}
+
+.row1 {
+    height: 100%;
+    display: flex; /* Use flexbox for horizontal layout */
+    gap: 20px; /* Space between the items */
+}
+
+.col-12s {
+    display: block;
+    margin: 1rem 0;
+    flex: 0 0 auto; /* Prevent columns from shrinking or growing */
+    display: inline-block; /* Ensure each column stays inline */
+    width: 350px; /* You can adjust the width as needed */
+}
+
+.box {
+    position: relative;
+    display: block;
+    height: max-content;
+    overflow:hidden;
+    background: #f9f9f9; /* Background color for the box */
+    padding: 10px;
     border-radius: 10px;
-    background:linear-gradient(to bottom,#ffffff,#6058d195);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.75); /* Equal shadow on all sides */
-}
-.row .col-12 .box:hover{
-    transform: translateY(-10px);
-}
-.row .col-12 .box img{
-    width: 100%; /* Make image take full width */
-    max-height: 50%; /* Make image take half height */
-    object-fit: cover; /* Crop image to cover the area without stretching */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.techTitle{
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    color:#21212186;
+.box img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 10px;
 }
 
-.techDefine span{
-    color: #0000008b;
+.techTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.techDefine {
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-12s:hover .hidden-tech {
+   transition: 1s ease-in-out;
+    position: absolute;
+    display:block;
+
+}
+.hidden-tech{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    display:none;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+    background: #000000e2; /* Background color for the box */
+    color:white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
   
   .card-body {
