@@ -323,45 +323,6 @@ body {
     margin-bottom: 15px;
     font-size: 1rem;
   }
-  .btn-advanced {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px; /* Smooth rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .btn-advanced:hover {
-    background: linear-gradient(135deg, #2575fc, #6a11cb); /* Reverse gradient on hover */
-    transform: scale(1.05); /* Slight enlargement */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Enhanced shadow for hover */
-  }
-  
-  .btn-advanced::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2); /* White shimmer effect */
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .btn-advanced:hover::before {
-    left: 100%; /* Shimmer animation */
-  }
-  
-  .btn-advanced:focus {
-    outline: none;
-  }
   
   /* Portfolio Section */
 .portfolio {
