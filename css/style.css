@@ -31,8 +31,8 @@ body {
   }
 
 .topaboutus a:hover{
-    transform: scale(1.05);
-    font-size: 20px;
+    transform: scale(0.95);
+    font-size: 14px;
 }
 /* Navbar */
 .navbar {
@@ -41,7 +41,7 @@ body {
     top:0;
     z-index: 1000;
     background-color: var(--accent-color);
-    transition: background-color 0.3s ease;
+    transition: 1s;
 }
 
 
@@ -51,14 +51,14 @@ body {
     font-weight: bolder;
     font-style: normal;
 }
-
+/*
 .navbar-brand{
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     color:#00f2ff;
 }
-
+*/
 .nav-link {
     font-family: 'Playfair Display', serif;
     color: white !important;
@@ -106,15 +106,15 @@ body {
 @keyframes textGlow {
     0% {
         color: #ffffff;
-        text-shadow: 0 0 5px #af4c9b, 0 0 10px #52ff58, 0 0 5px #ffffff;
+        text-shadow: 0 0 15px #af4c9b, 0 0 10px #52ff58, 0 0 15px #ffffff;
     }
     50% {
-        color: #74da00;
-        text-shadow: 0 0 10px #ff0000, 0 0 15px #2196F3, 0 0 6px #004cff;
+        color: #ffffff;
+        text-shadow: 0 0 10px #ff0000, 0 0 15px #2196F3, 0 0 16px #004cff;
     }
     100% {
-        color: #ff6a00;
-        text-shadow: 0 0 15px #1aff00, 0 0 20px #00f2ff, 0 0 5px #ffffff;
+        color: #ffffff;
+        text-shadow: 0 0 15px #1aff00, 0 0 20px #00f2ff, 0 0 15px #ffe102;
     }
 }
 
@@ -254,32 +254,6 @@ body {
 .techDefine span{
     color: #0000008b;
 }
-
-/* Portfolio Section */
-.portfolio {
-    position: relative;
-    width: 100%;
-    /*background: linear-gradient(to bottom, #10233b7e, #10233b);*/
-    padding: 80px 0;
-}
-
-.wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-/* Footer */
-footer {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-
   
   .card-body {
     display: flex;
@@ -338,8 +312,57 @@ footer {
     outline: none;
   }
   
+  /* Portfolio Section */
+.portfolio {
+    position: relative;
+    width: 100%;
+    /*background: linear-gradient(to bottom, #10233b7e, #10233b);*/
+    padding: 80px 0;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color: #4f4fae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.contact-icons a:hover {
+    color: #50d1c1;
+}
+.contact-icons svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, var(--accent-color),#ffffff);
+    color: rgb(0, 0, 0);
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-container{
+    color:rgb(0, 0, 0);
+    font-size: 15px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    .navbar{
+        margin: auto;
+    }
     .hero h1 {
 
         margin: 0;

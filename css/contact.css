@@ -1,0 +1,91 @@
+/* Contact Page Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+.container {
+    background: rgba(237, 237, 237, 0.96)6b6;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.toptext{
+    border:1px solid rgb(0, 162, 38);
+    border-radius: 15px;
+    position: relative;
+}
+.btn-as-link{
+    position: absolute;
+    top:0;
+    left:10px;
+}
+
+.container h1 {
+    color: #4f4fae;
+    font-weight: 700;
+}
+.form-control {
+    border-radius: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+}
+#contact-form label {
+    font-weight: 600;
+    color: #4f4fae;
+    text-align: left;
+    justify-self:start;
+}
+
+#contact-form input[type="text"],#contact-form input[type="email"],#contact-form textarea {
+    background-color: #d9d6d6;
+    color: #007311;
+}
+#contact-form input[type="text"]:focus ,#contact-form input[type="email"]:focus ,#contact-form textarea:focus {
+    background-color: #ffffff;
+    border: 2px solid #00ff44;
+    outline:none;
+}
+#contact-form input[type="text"]:hover ,#contact-form input[type="email"]:hover ,#contact-form textarea:hover {
+    background-color: #ffffff;
+    border: 1px solid #00ff44;
+}
+.btn-primary {
+    background: #50d1c1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background: #7878d4;
+    color: #fff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.contact-icons a {
+    text-decoration: none;
+    color: #4f4fae;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: 0.3s;
+    margin: 0 1rem;
+}
+.contact-icons a:hover {
+    color: #50d1c1;
+}
+.contact-icons svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
