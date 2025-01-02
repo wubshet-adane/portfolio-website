@@ -339,6 +339,12 @@ body {
     width: 100%;
     z-index: -1;
 }
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
 .contact-icons a {
     text-decoration: none;
@@ -394,6 +400,12 @@ footer {
 
     .row .col-12 .box{
         margin-bottom: 2rem;
+    }
+    .contact-icons {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 
 }
