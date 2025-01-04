@@ -13,16 +13,37 @@ body {
     max-width: 900px;
     width: 100%;
 }
+.nav-bar{
+    font-size: 1.5rem;
+}
+.nav-bar .nav-bar-links{
+    list-style-type: none;
+    justify-content: center;
+    display:flex;
+}
+.nav-bar .nav-bar-links li a{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    border-radius:5px;
+}
+.nav-bar .nav-bar-links li a:hover{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 183, 3);
+    border: 2px solid rgb(255, 183, 3);
+    border-radius:5px;
+}
+
 
 .toptext{
     border:1px solid rgb(0, 162, 38);
     border-radius: 15px;
     position: relative;
-}
-.btn-as-link{
-    position: absolute;
-    top:0;
-    left:10px;
 }
 
 .container h1 {

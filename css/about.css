@@ -1,0 +1,109 @@
+body{
+    box-sizing: border-box;
+    margin: auto;
+    align-content:center;
+    align-items:center;
+}
+header .nav-bar{
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.nav-bar .nav-bar-links{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.nav-bar .nav-bar-links li a{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+.nav-bar .nav-bar-links li a:hover{
+    margin: 0 1rem;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 183, 3);
+    border: 2px solid rgb(255, 183, 3);
+}
+
+
+.title-phrase h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #4f4fae;
+    text-align: center;
+    margin: 2rem 0;
+}
+.hero-section{
+    margin: 2rem 0;
+    padding:0 3rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.img-container{
+    width: 40%;
+    padding: 2rem;
+    height:100%;
+}
+.aboutme-image .dev-image{
+    width:100%;
+    border-radius:6px;
+    margin: auto;
+}
+
+
+
+.aboutme-text{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 60%;
+    padding:2rem;
+    word-spacing: 2px;
+    line-height:1.8rem;
+}
+.whoami{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4f4fae;
+    line-height: 3rem;
+    text-decoration: underline;
+}
+.skills ul{
+    float: right;
+    list-style-type:none;
+    justify-content: center;
+    text-align: left;
+}
+.skills ul li::before{
+    content: "\2713";
+    color: #4f4fae;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.skills ul h4{
+    text-shadow: 0px 1px black;
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+    }
+    .img-container, .aboutme-text{
+        padding: 2px;
+    }
+
+    
+}

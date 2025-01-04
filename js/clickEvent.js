@@ -25,7 +25,7 @@ function clickEventreadmore() {
         content.style.height = `${content.scrollHeight+100}px`;
         content.style.overflow = "visible";
         viewMoreBtn.textContent = "View Less ▲";
-        herousbag.style.bottom = "-10rem";
+        herousbag.style.bottom ="-20rem";
         viewMoreBtn.style.backgroundColor = "#B7BD10FF";
     } else {
         // Collapse content
