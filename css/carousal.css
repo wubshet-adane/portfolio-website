@@ -6,7 +6,10 @@
     align-items: center;
     justify-items: center;
   }
- 
+ .carousel-bodies input:hover {     /* Hover effect for the radio buttons */
+    cursor: pointer;
+    padding: 10px;
+  }
 
   main#carousel {
     grid-row: 1 / 2;
