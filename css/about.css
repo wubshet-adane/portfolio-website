@@ -5,7 +5,6 @@ body{
     align-items:center;
 }
 header .nav-bar{
-    color: white;
     padding: 1rem;
     text-align: center;
     font-size: 1.5rem;
@@ -33,8 +32,10 @@ header .nav-bar{
 
 
 .title-phrase h2{
+    text-transform: capitalize;
     font-size: 2rem;
-    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     color: #4f4fae;
     text-align: center;
     margin: 2rem 0;
@@ -76,10 +77,13 @@ header .nav-bar{
     text-decoration: underline;
 }
 .skills ul{
-    float: right;
     list-style-type:none;
     justify-content: center;
     text-align: left;
+}
+.skills ul li{
+    display: inline-block;
+    color: #208397;
 }
 .skills ul li::before{
     content: "\2713";
@@ -94,16 +98,179 @@ header .nav-bar{
     margin-bottom: 0;
 }
 
+
+.aboutme-details{
+    box-sizing: border-box;
+    margin: 1rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    margin: 1rem 0;
+    justify-content:space-evenly;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+.aboutme-details .card-box{
+    flex: 1 1 20%;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius:8px;
+}
+.card-box{
+    position: relative; /* Position the image relative to the container */
+}
+.card-box div img{
+    height: 100px;
+}
+.card-box div h4{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    color: #4f4fae;
+    margin: 2px;
+}
+.card-box div h4 + p {
+    text-align: justify; /* Justify the text to align both start and end */
+    text-align-last: center; /* Center-align the last line */
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #21214f;
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin: 0 2rem 2rem 0; /* Center the entire block within its container */
+    max-width: 600px; /* Optional: Set a max width for better layout control */
+}
+.card-box div p a{
+    position: absolute; /* Fix the element to the screen */
+    bottom: 4px; /* Align it to the bottom */
+    left: 50%; /* Move it to the center horizontally */
+    text-decoration: none; /* Remove underline from the link */ 
+    transform: translateX(-50%); /* Adjust for the element's width to center perfectly */
+    color: white;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    background-color: #4b1269b3;
+    border: 1px solid #828080;
+    border-radius: 4px;
+    box-shadow: 0 3px #999;
+    text-align: center;
+    transition: all 0.2s ease;
+    z-index: 4; /* Set a higher z-index to ensure it's on top of other elements */
+}
+.card-box div p a:hover{
+    box-shadow: 0 1px #666;
+    bottom: 2px;
+    background-color: #3b0759ce;
+}
+
+
+
+footer{
+    background-color: #0f003566;
+    color: #01233cdd;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 2rem;
+    box-shadow: 0px -15px 15px #0f003566; /* Top shadow */
+}
+footer .footer-links{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer .footer-links li img{
+    width: 30px;
+    height: 30px;
+    margin: 0 1rem;
+}
+footer .footer-links li span, footer .footer-links li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #100018db;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: capitalize;
+}
+footer .footer-links li a:hover{
+    color: #100018db;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 183, 3);
+    border: 2px solid rgb(255, 183, 3);
+    border-radius:5px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    header .nav-bar{
+        position: sticky;
+        top: 0%;
+        padding: 0.5rem;
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #0f003534;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .hero-section{
+        background-color: #0f003534;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .img-container{
+        padding: 0%;
+    }
+    .aboutme-image .dev-image{
+        width:100%;
+        border-radius:50%;
+        margin: auto;
+    }
+    .aboutme-text{
+        width: 90%;
+        padding: 0%;
+        margin: 0;
+    }
+    .whoami{
+        line-height: 0%;
+    }
+
+
+    .aboutme-details{
+        margin: 0;
+        padding: 0;
+    }
+    .aboutme-details{
+        flex-direction: row;
+    }
+    .aboutme-details .card-box{
+        flex: 1 1 35%;
+    }
+}
 @media screen and (max-width: 768px) {
     .hero-section{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin: 0;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
     }
     .img-container, .aboutme-text{
-        padding: 2px;
     }
 
-    
+
+
+    .aboutme-details{
+        flex-direction: column;
+    }
+    .aboutme-details .card-box{
+        flex: 1 1 90%;
+    }
+
 }
