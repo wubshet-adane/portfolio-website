@@ -1,0 +1,124 @@
+/* General styling for the main content */
+.main-content {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Styling for the projects container */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+/* Base styling for each project */
+.projects-container > div {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding:30px 100px;
+    border-radius: 10px;
+}
+
+/* Hover effect for each project
+.projects-container > div:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+ */
+/* Alternate layout for projects */
+.projects-container > div:nth-child(odd) {
+    flex-direction: row;
+}
+
+.projects-container > div:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.projects-container > div:nth-child(odd) .project-description a{
+    float: left;
+}
+.projects-container > div:nth-child(even) .project-description a{
+    float: right;
+}
+.projects-container > div:nth-child(odd) .project-description{
+    border-left: 2px solid #4b1269b3;
+}
+.projects-container > div:nth-child(even) .project-description{
+    border-right: 2px solid #4b1269b3;
+}
+
+/* Styling for project images */
+.project-image {
+    flex: 1;
+    max-width: 40%;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Styling for project descriptions */
+.project-description {
+    flex: 1;
+    padding: 10px;
+}
+
+.project-description h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.project-description a {    
+    text-decoration: none; /* Remove underline from the link */ 
+    color: white;
+    padding: 2px 6px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: 'Arial', sans-serif;
+    background-color: #4b1269b3;
+    border: 1px solid #828080;
+    border-radius: 6px;
+    box-shadow: 0 3px #999;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.project-description a:hover{
+    box-shadow: 0 1px #666;
+    bottom: 2px;
+    background-color: #3b0759ce;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .projects-container > div {
+        display: block;
+        gap: 4rem;
+        padding: 20px;
+    }
+
+    .project-image {
+        max-width: 100%;
+    }
+
+    .project-image img {
+        max-width: 100%;
+    }
+
+    .projects-container > div:nth-child(even) .project-description {
+        padding: 20px;
+        border-left:none;
+    }
+
+}
