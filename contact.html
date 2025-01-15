@@ -46,7 +46,7 @@
       
         <form method="post" action="https://formsubmit.co/0967490154w@gmail.com" class="my-4" id="contact-form">
 
-          <!--<input type="hidden" name="_next" value="https://wubshet-adane.github.io/portfolio-website/contact.html">-->
+          <input type="hidden" name="_next" value="https://wubshet-adane.github.io/portfolio-website/contact.html">
           <input type="hidden" name="_after" value="Thank you for your message! I will get back to you soon.">
           <input type="hidden" name="_subject" value="New Contact Form Submission from your portfolio website visitor!"> 
 
@@ -66,12 +66,12 @@
         </form>
     </div>
     <hr>
-        <footer style="background:linear-gradient(to bottom,#ffffff00, #ffffff00)">
+        <footer>
           <div class="footer-container">
         
             <div>
               <img src="images/logo2.jpg" width="200px" height="80px" alt="Logo" style="border-radius: 6px;"><br>
-              <q style="font-family:cursive ;font-size:32px;">
+              <q style="font-family:cursive; font-size:32px;">
                 --Software Engineering --- based on engineering principles..
               </q>
               
@@ -119,10 +119,14 @@
       // Get the URL parameters
       const params = new URLSearchParams(window.location.search);
       const error = params.get('error');
+      const success = params.get('success');
 
       if (error) {
           // Show the error message to the user
           alert('Error: ' + error);
+      }
+      if (success){
+          alert('sucess:' + success);
       }
     </script>
 

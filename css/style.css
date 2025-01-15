@@ -99,7 +99,9 @@ body {
     display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
-    animation: fadeIn 2s ease-out, textGlow 3s infinite alternate;
+    transform-style: preserve-3d;
+    perspective: 1000px; /* The perspective of the 3D effect */
+    animation: rotateText 3s infinite alternate;
 }
 
 /* Text Shadow and Color Change Animation */
@@ -394,11 +396,16 @@ body {
 }
 
 /* Footer */
-footer {
-    background: linear-gradient(to bottom, var(--accent-color),#ffffff);
-    color: rgb(0, 0, 0);
-    padding: 40px 0;
+footer { 
+    background-color: #0f003566;
+    color: #01233cdd;
     text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 2rem;
+    box-shadow: 0px -15px 15px #0f003566;
 }
 .footer-container{
     color:rgb(0, 0, 0);

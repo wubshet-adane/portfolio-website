@@ -22,8 +22,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Send the email
         if (mail($to, $subject, $email_content, $headers)) {
-            echo "Thank you for contacting us! We will get back to you soon.";
-        } else {
+            $success = "Thank you for contacting us! We will get back to you soon.";
+            header("Location: contact.html?success=" . urlencode($success));
+        }
+        else {
             $error = "Sorry, something went wrong. Please try again later.";
             header("Location: contact.html?error=" . urlencode($error));
             exit;
