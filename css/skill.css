@@ -1,0 +1,66 @@
+.quote{
+    background: linear-gradient(90deg, #0078D4, #00C6D4);
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    line-height: 1.8;
+}
+  /* Skills Section */
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skill {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .skill h2 {
+    font-size: 1.5rem;
+    color: #4f4fae;
+    margin-bottom: 1rem;
+  }
+  
+  .skill ul {
+    list-style-type: square;
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .skill ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9rem;
+  }  
