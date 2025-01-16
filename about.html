@@ -15,6 +15,11 @@
     <link rel="icon" href="images/log4.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/about.css">
     
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>    
 </head>
 <body>
     <header>
@@ -30,13 +35,13 @@
         </div>
     </header>
     <section class="hero-section">
-        <div class="img-container">
+        <div class="img-container" data-aos="fade-left">
             <div class="aboutme-image">
                 <img class="dev-image" src="images/programmers .jpg" alt="Developer Image">
             </div>
         </div>
         <hr>
-        <div class="aboutme-text">
+        <div class="aboutme-text" data-aos="fade-right">
             <h2 class="whoami">Who Am I???</h2>
             <div class="full-text">
                 i am wubshet adane a commited software engoneer from ethiopia if you have an idea that must be real at your lives let's 
@@ -62,7 +67,7 @@
         </div>
     </section>
     <div class="aboutme-details">
-        <div class="education card-box">
+        <div class="education card-box" data-aos="fade-up">
             <div class="education-list">
                 <img src="images/institution.png" alt="institution">
                 <h4>my education</h4>
@@ -72,7 +77,7 @@
                 <p><a href="">read more</a></p>
             </div>
         </div>
-        <div class="experience card-box">
+        <div class="experience card-box" data-aos="fade-up">
             <div class="experience-list">
                 <img src="images/timeline.png" alt="institution">
                 <h4>my experiance</h4>
@@ -82,7 +87,7 @@
                 <p><a href="">read more</a></p>
             </div>
         </div>
-        <div class="skills card-box">
+        <div class="skills card-box" data-aos="fade-up">
             <div class="skills-list">
                 <img src="images/skills.png" alt="institution">
                 <h4>my skills</h4>
@@ -94,7 +99,7 @@
                 <p><a href="">read more</a></p>
             </div>
         </div>
-        <div class="certificates card-box">
+        <div class="certificates card-box" data-aos="fade-up">
             <div class="certificates-list">
                 <img src="images/approved.png" alt="certeficates">
                 <h4>Certificates</h4>
@@ -105,7 +110,7 @@
                 <p><a href="">read more</a></p>
             </div>
         </div>
-        <div class="cv card-box">
+        <div class="cv card-box" data-aos="fade-up">
             <div class="cv-list">
                 <img src="images/CV.png" alt="CV and Resume">
                 <h4>CV and Resume...</h4>
@@ -118,7 +123,7 @@
                 <p><a href="">read more</a></p>
             </div>
         </div>
-        <div class="portfolio card-box">
+        <div class="portfolio card-box" data-aos="fade-up">
             <div class="cv-list">
                 <img src="images/portfolios.png" alt="portfolios">
                 <h4>Portfolios...</h4>
@@ -132,6 +137,12 @@
             </div>
         </div>
     </div>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            once: true,    // Whether animation should happen only once
+        });
+    </script>
     <footer>
         <div>
             <ul class="footer-links">
