@@ -101,7 +101,7 @@ body {
     text-transform: uppercase;
     transform-style: preserve-3d;
     perspective: 1000px; /* The perspective of the 3D effect */
-    animation: rotateText 3s infinite alternate;
+    animation: fadeIn 5s infinite alternate, textGlow 3s infinite alternate;
 }
 
 /* Text Shadow and Color Change Animation */
@@ -124,11 +124,11 @@ body {
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translatex(1000px);
+        transform: translateZ(100px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
