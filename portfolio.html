@@ -14,10 +14,16 @@
     <meta property="og:description" content="wubshet adane software engineer  portfolio website.">
     <meta property="og:url" content="https://wubshet-adane.github.io/portfolio-website/">
     <meta property="og:type" content="website">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- AOS JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
     <link rel="icon" href="images/log4.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/portfolio.css">
-    <title>Document</title>
+    <title>projects</title>
 </head>
 <body>
     <header>
@@ -35,7 +41,7 @@
 
     <main class="main-content">
         <div class="projects-container">
-            <div class="guest-management-system-MINT" id="guest-management-system">
+            <div class="guest-management-system-MINT" id="guest-management-system" data-aos="fade-up">
                 <div class="project-image">
                     <img src="images/reception responce.png" alt="Guest Management System">
                 </div>
@@ -64,7 +70,7 @@
                     <a href="" class="readmore">view project</a>
                 </div>
             </div>
-            <div class="online-food-ordering-system-DMU" id="online-food-ordering-system">
+            <div class="online-food-ordering-system-DMU" id="online-food-ordering-system" data-aos="fade-up">
                 <div class="project-image">
                     <img src="images/food-ordering.png" alt="E-commerce Website">
                 </div>
@@ -89,7 +95,7 @@
                     <a href="" class="readmore">view project</a>
                 </div>
             </div>
-            <div class="accountant-website" id="accountant-website">
+            <div class="accountant-website" id="accountant-website" data-aos="fade-up">
                 <div class="project-image">
                     <img src="images/accountant website.png" alt="Online Food Ordering System DMU">
                 </div>
@@ -108,7 +114,7 @@
                     <a href="" class="readmore">view project</a>
                 </div>
             </div>
-            <div class="online-education-platform" id="online-education-platform">
+            <div class="online-education-platform" id="online-education-platform" data-aos="fade-up">
                 <div class="project-image">
                     <img src="images/online education.jpg" alt="Online Education Platform">
                 </div>
@@ -133,7 +139,7 @@
                     <a href="" class="readmore">view project</a>
                 </div>
             </div>
-            <div class="online-education-platform" id="online-education-platform">
+            <div class="online-education-platform" id="online-education-platform" data-aos="fade-up">
                 <div class="project-image">
                     <img src="images/school management system.png" alt="Online Education Platform">
                 </div>
@@ -165,5 +171,12 @@
             copy right &copy;2025 all right reseved: Disigned by Wubshet Adane:
         </div>
     </footer>
+    <script>
+        AOS.init({
+            duration: 800, // Animation duration in milliseconds
+            once: true,    // Whether animation should happen only once
+        });
+
+    </script>
 </body>
 </html>
