@@ -102,6 +102,25 @@
 
 /* Responsive design */
 @media screen and (max-width: 900px) {
+    .nav-bar{
+        position: sticky;
+        top: 0;
+        padding: rem;
+        text-align: center;
+        font-size: 1rem;
+        background-color: #0f0035;
+        box-shadow: 0 10px 10px rgb(0, 0, 0);
+        z-index: 1;
+    }
+    .nav-bar ul {
+        margin: 0;
+        padding: 0;
+    }
+    .nav-bar ul li a{
+        font-size: 1rem;
+        padding: 0;
+        margin: 0;
+    }
     .projects-container > div {
         display: block;
         gap: 4rem;

@@ -1,11 +1,16 @@
 /* Contact Page Styles */
 
 body {
-    font-family: 'Roboto', sans-serif;
-    height: 100vh;
     justify-content: center;
     margin: 0;
 }
+
+.nav-bar{
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .container {
     background: rgba(237, 237, 237, 0.96)6b6;
     border-radius: 15px;
@@ -84,6 +89,59 @@ form{
     width: 24px;
     height: 24px;
 }
-footer {
-   
-  }
+
+@media screen and (max-width: 900px) {
+    body {
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+    }
+    .nav-bar{
+        position: sticky;
+        top: 0;
+        padding: rem;
+        text-align: center;
+        font-size: 1rem;
+        background-color: #0f0035;
+        box-shadow: 0 10px 10px rgb(0, 0, 0);
+        z-index: 1;
+    }
+    .nav-bar ul {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        background: rgba(237, 237, 237, 0.96)6b6;
+        border-radius: 15px;
+        padding: 0;
+        width: 100%;
+    }
+    form {
+        box-shadow: none;
+        border: none;
+        padding: 10px;
+    }
+    .form-control {
+        padding: 5px 10px;
+    }
+    #contact-form label {
+        font-size: 1rem;
+    }
+    #contact-form input[type="text"],#contact-form input[type="email"],#contact-form textarea {
+        padding: 5px 10px;
+    }
+    .btn-primary {
+        padding: 5px 10px;
+    }
+    .contact-icons {
+        margin-top: 10px;
+    }
+    .contact-icons a {
+        margin: 0 0.5rem;
+    }
+    .contact-icons svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+}

@@ -59,3 +59,21 @@
     margin: 0;
     font-size: 0.9rem;
   }  
+  @media screen and (max-width: 900px) {
+    
+    .nav-bar{
+      position: sticky;
+      top: 0;
+      padding: rem;
+      text-align: center;
+      font-size: 1rem;
+      background-color: #0f0035;
+      box-shadow: 0 10px 10px rgb(0, 0, 0);
+      z-index: 1;
+    }
+    .nav-bar ul {
+        margin: 0;
+        padding: 0;
+    }
+    
+  }
