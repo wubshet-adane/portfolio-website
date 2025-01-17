@@ -1,5 +1,5 @@
 .quote{
-    background: linear-gradient(90deg, #0078D4, #00C6D4);
+    background: linear-gradient(15deg, #025a9d, #6014ca);
     color: #fff;
     padding: 1.5rem;
     border-radius: 10px;
@@ -7,9 +7,10 @@
     font-size: 1.2rem;
     text-align: center;
     margin: 2rem auto;
-    max-width: 800px;
-    line-height: 1.8;
-}
+    line-height: 1.5;
+    max-width: 1200px;
+  }
+
   /* Skills Section */
   .skills {
     display: grid;
@@ -38,12 +39,6 @@
     font-size: 1.5rem;
     color: #4f4fae;
     margin-bottom: 1rem;
-  }
-  
-  .skill ul {
-    list-style-type: square;
-    margin: 0;
-    padding-left: 1.5rem;
   }
   
   .skill ul li {

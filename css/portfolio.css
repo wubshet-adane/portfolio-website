@@ -101,7 +101,7 @@
 
 
 /* Responsive design */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     .projects-container > div {
         display: block;
         gap: 4rem;
