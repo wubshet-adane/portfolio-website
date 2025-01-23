@@ -35,7 +35,7 @@ header .nav-bar{
 }
 
 .title-phrase{
-    background: linear-gradient(12deg, rgb(97, 93, 26), #0088ff);
+    background: linear-gradient(12deg, rgb(181, 173, 32), #2e0394);
     color: #fff;
     padding: 1.5rem;
     border-radius: 10px;
@@ -260,7 +260,7 @@ footer .footer-links li a:hover{
         font-weight: 600;
     }
     .title-phrase{
-        background: linear-gradient(45deg, #2b1894, #0083bf);
+        background: linear-gradient(45deg, #544a88, #0083bf);
         color: #fff;
         border-radius: 0px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
