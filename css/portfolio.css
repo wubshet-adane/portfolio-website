@@ -93,6 +93,10 @@
     background-color: #161616ce;
 }
 
+.view-project-link{
+    pointer-events: none;
+}
+
 
 /* Responsive design */
 @media screen and (max-width: 900px) {
