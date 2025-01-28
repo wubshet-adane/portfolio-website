@@ -89,6 +89,9 @@ header .nav-bar{
     line-height: 3rem;
     text-decoration: underline;
 }
+.full-text{
+    text-align: justify;
+}
 .aboutme-quotes{
     font-size: 1rem;
     color: #4f4fae;
