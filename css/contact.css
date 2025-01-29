@@ -135,6 +135,7 @@ form{
         box-shadow: none;
         border: none;
         padding: 10px;
+        background-color: #575353;
     }
     .form-title {
         color: #4f4fae;
