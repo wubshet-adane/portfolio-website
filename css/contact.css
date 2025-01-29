@@ -29,6 +29,7 @@ form{
     padding: 50px ;
     border-radius: 15px;
     position: relative;
+    background-color: #d9d6d6;
 }
 .form-title{
     color: #ffffff;
@@ -132,10 +133,10 @@ form{
         width: 100%;
     }
     form {
+        background-color: #d9d6d600;
         box-shadow: none;
         border: none;
         padding: 10px;
-        background-color: #575353;
     }
     .form-title {
         color: #4f4fae;
