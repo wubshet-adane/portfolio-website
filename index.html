@@ -41,7 +41,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Press+Start+2P&display=swap');
     </style>
-    <script src="js/clickEvent.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    
+    <script src="js/clickEvent.js" defer></script>
+    <script src="js/typography.js" defer></script>
+    <script src="js/scroll.js" defer></script>
 </head>
 
 <body>
@@ -154,10 +159,9 @@
             <img src="images/watch.jpg" alt="  " class="watch-center" id="watch-center">
           </div>
         </div>-->
-        <h1>
-          <q style="font-family:monospace; font-size:32px;" id="typingeffect">
-          --Software Engineering based on engineering principles..
-          </q>
+        <h1 id="hero" data-aos="fade-up">
+            I'm Wubshet Adane <br>
+            <code class="line" id="typeWriter"></code>
         </h1>
         <div class="herousbag" id="herousbag" data-aos="fade-up">
           <div class="heroUs" id="heroUs">
@@ -184,7 +188,7 @@
         <p class="edgeTech">
             Cutting-edge technologies that relate to my interests, projects, and studies
         </p>
-        <div class="containers">
+        <div class="containers scroll-container">
             <div class="row1" data-aos="fade-right">
                 <div class="col-12s">
                     <div class="box">

@@ -83,57 +83,35 @@ body {
     background-size: cover;
     background-position: center;
     color: rgb(0, 0, 0);
-    text-align: center;
     padding: 130px 0;
 }
 
 
 /* Basic Styling for the Title */
-.hero h1 {
+ #hero{
+    margin-left: 100px;
     font-size: 2.5rem;
-    font-family: "Press Start 2P", system-ui;
     font-style: normal;
     color: #594caf;
-    text-align: center;
-    margin:auto;
+    text-align:left;
     padding-bottom: 2rem;
     display: inline-block;
     letter-spacing: 1px;
     text-transform: uppercase;
-    transform-style: preserve-3d;
-    perspective: 1000px; /* The perspective of the 3D effect */
-    animation: fadeIn 5s infinite alternate, textGlow 3s infinite alternate;
+    color: #ffffff;
+    font-family: "orbitron", sans-serif;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease; /* Smooth scaling and fading */
 }
 
-/* Text Shadow and Color Change Animation */
-@keyframes textGlow {
-    0% {
-        color: #ffffff;
-        text-shadow: 0 0 15px #af4c9b, 0 0 10px #52ff58, 0 0 15px #ffffff;
-    }
-    50% {
-        color: #ffffff;
-        text-shadow: 0 0 10px #ff0000, 0 0 15px #2196F3, 0 0 16px #004cff;
-    }
-    100% {
-        color: #ffffff;
-        text-shadow: 0 0 15px #1aff00, 0 0 20px #00f2ff, 0 0 15px #ffe102;
-    }
-}
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateZ(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
+.line{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 
 .hero p{
+    text-align: center;
     color:#0048ff;
     font-size: 1rem;
     text-decoration: underline;
@@ -316,7 +294,7 @@ body {
     width: 100%;
     height: 100%;
     overflow:hidden;
-    background:linear-gradient(to bottom, #000000, #000000eb, #009ac5 ); /* Background color for the box */
+    background:linear-gradient(to bottom, #2c3e50f4, #182635f4 ); /* Background color for the box */
     color:white;
     padding: 10px;
     border-radius: 10px;
@@ -328,8 +306,9 @@ body {
     color:#ffbf00d4;
 }
 .hidden-description p{
+    padding-top: 100px;
     font-size: 16px;
-    text-align: start;
+    text-align: justify;
 }
 .hidden-tech a{
     color:#000000dd;
@@ -439,14 +418,10 @@ footer {
     .navbar{
         margin: auto;
     }
-    .hero h1 {
+    #hero{
 
-        margin: 0;
+        margin: 10px;
         font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1.5rem;
     }
 
     .heroUs {
